@@ -45,20 +45,8 @@ void addForm::on_butCancel_clicked()
     this->close();
 }
 
-
-void addForm::on_butAdd_clicked()
+void addForm::add_contact()
 {
-
-    if(ui->lName->text().simplified() == "")
-    {
-        msg(trUtf8("Поле <b>Имя</b> не должно быть пустым."));
-        return;
-    }
-    if(ui->lNick->text().simplified() == "")
-    {
-        msg(trUtf8("Поле <b>Никнейм</b> не должно быть пустым."));
-        return;
-    }
     QFile fileNewContact("Contacts/"+ui->lName->text().simplified()+" "+ui->lNick->text().simplified());
     if(fileNewContact.open(QIODevice::WriteOnly|QIODevice::Text))
     {
@@ -79,4 +67,40 @@ void addForm::on_butAdd_clicked()
     fileNewContact.close();
     emit closing();
     this->close();
+}
+
+
+void addForm::on_butAdd_clicked()
+{
+
+    if(ui->lName->text().simplified() == "")
+    {
+        msg(trUtf8("Поле <b>Имя</b> не должно быть пустым."));
+        return;
+    }
+    if(ui->lNick->text().simplified() == "")
+    {
+        msg(trUtf8("Поле <b>Никнейм</b> не должно быть пустым."));
+        return;
+    }
+    if(QFile::exists("Contacts/"+ui->lName->text().simplified()+" "+ui->lNick->text().simplified()))
+    {
+        QMessageBox* pmbx =
+                            new QMessageBox(trUtf8("Добавление контакта"),
+                            trUtf8("Контакт с таким <b>именем</b> и <b>никнеймом</b> уже существует, вы желаете перезаписать его?"),
+                            QMessageBox::Question,
+                            QMessageBox::Yes,
+                            QMessageBox::No,
+                            QMessageBox::Cancel | QMessageBox::Escape);
+        int n = pmbx->exec();
+        delete pmbx;
+        if (n == QMessageBox::Yes)
+        {
+            add_contact();
+        }
+    }
+    else
+    {
+        add_contact();
+    }
 }

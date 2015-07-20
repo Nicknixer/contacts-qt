@@ -48,17 +48,38 @@ void MainWindow::on_listContacts_itemClicked(QListWidgetItem *item)
         ui->lICQ->setText(stream.readLine());
 
         ui->lVK->setText(stream.readLine());
-        ui->lVK->setText("<a href='"+ui->lVK->text()+"'>"+ui->lVK->text()+"</a>");
-        ui->lVK->setOpenExternalLinks(true);
+        if (ui->lVK->text() == "http://vk.com/")
+        {
+            ui->lVK->clear();
+        }
+        else
+        {
+            ui->lVK->setText("<a href='"+ui->lVK->text()+"'>"+ui->lVK->text()+"</a>");
+        }
+
 
         ui->lOK->setText(stream.readLine());
-        ui->lOK->setText("<a href='"+ui->lOK->text()+"'>"+ui->lOK->text()+"</a>");
-        ui->lOK->setOpenExternalLinks(true);
+        if(ui->lOK->text() == "http://ok.ru/profile/")
+        {
+                ui->lOK->clear();
+        }
+                else
+        {
+                ui->lOK->setText("<a href='"+ui->lOK->text()+"'>"+ui->lOK->text()+"</a>");
+        }
+
 
 
         ui->lFaceBook->setText(stream.readLine());
-        ui->lFaceBook->setText("<a href='"+ui->lFaceBook->text()+"'>"+ui->lFaceBook->text()+"</a>");
-        ui->lFaceBook->setOpenExternalLinks(true);
+        if(ui->lFaceBook->text() == "https://fb.com/profile.php?id=")
+        {
+            ui->lFaceBook->clear();
+        }
+        else
+        {
+            ui->lFaceBook->setText("<a href='"+ui->lFaceBook->text()+"'>"+ui->lFaceBook->text()+"</a>");
+        }
+
 
         ui->lPhone->setText(stream.readLine());
         ui->lMail->setText(stream.readLine());
@@ -86,4 +107,31 @@ void MainWindow::on_actionQuit_triggered()
 void MainWindow::on_action_3_triggered()
 {
     emit on_butAddContact_clicked();
+}
+
+void MainWindow::on_action_4_triggered()
+{
+    about_form = new about();
+    about_form->show();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    QListWidgetItem *item = ui->listContacts->currentItem();
+    QMessageBox* pmbx =
+                        new QMessageBox(trUtf8("Удаление контакта"),
+                        trUtf8("Вы действительно хотите удалить <b>") + item->text() + "</b>?",
+                        QMessageBox::Question,
+                        QMessageBox::Yes,
+                        QMessageBox::No,
+                        QMessageBox::Cancel | QMessageBox::Escape);
+    int n = pmbx->exec();
+    delete pmbx;
+    if (n == QMessageBox::Yes)
+    {
+        QFile("Contacts/"+item->text()).remove();
+        ui->listContacts->takeItem(ui->listContacts->currentRow());
+    }
+
+
 }

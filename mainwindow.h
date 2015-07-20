@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
 #include <addform.h>
+#include <about.h>
 #include <QListWidgetItem>
 namespace Ui {
 class MainWindow;
@@ -30,9 +32,14 @@ private slots:
 
     void on_action_3_triggered();
 
+    void on_action_4_triggered();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     addForm *addF;
+    about *about_form;
     void updateList();
     QStringList ls;
 };

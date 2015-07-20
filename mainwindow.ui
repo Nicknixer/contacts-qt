@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>614</width>
+    <width>663</width>
     <height>428</height>
    </rect>
   </property>
@@ -21,12 +21,12 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>614</width>
+    <width>1000</width>
     <height>428</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>Контакты</string>
+   <string>Книга контактов</string>
   </property>
   <property name="documentMode">
    <bool>false</bool>
@@ -66,8 +66,12 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>12</pointsize>
+       <pointsize>10</pointsize>
+       <stylestrategy>PreferDefault</stylestrategy>
       </font>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_2">
@@ -112,9 +116,46 @@
      <rect>
       <x>300</x>
       <y>0</y>
-      <width>301</width>
+      <width>351</width>
       <height>391</height>
      </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>57</red>
+          <green>50</green>
+          <blue>50</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>57</red>
+          <green>50</green>
+          <blue>50</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>231</red>
+          <green>231</green>
+          <blue>231</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
     </property>
     <property name="font">
      <font>
@@ -437,8 +478,8 @@
       <rect>
        <x>0</x>
        <y>130</y>
-       <width>41</width>
-       <height>21</height>
+       <width>71</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="palette">
@@ -506,7 +547,13 @@
       </palette>
      </property>
      <property name="text">
-      <string>ICQ:</string>
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/img/icq.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
@@ -514,7 +561,7 @@
       <rect>
        <x>0</x>
        <y>150</y>
-       <width>66</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -583,15 +630,21 @@
       </palette>
      </property>
      <property name="text">
-      <string>VK:</string>
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/img/vk.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>35</x>
        <y>170</y>
-       <width>66</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -668,7 +721,7 @@
       <rect>
        <x>0</x>
        <y>190</y>
-       <width>91</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -737,7 +790,13 @@
       </palette>
      </property>
      <property name="text">
-      <string>Facebook:</string>
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/img/facebook-logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="label_9">
@@ -745,7 +804,7 @@
       <rect>
        <x>0</x>
        <y>210</y>
-       <width>91</width>
+       <width>41</width>
        <height>21</height>
       </rect>
      </property>
@@ -814,7 +873,13 @@
       </palette>
      </property>
      <property name="text">
-      <string>Телефон:</string>
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/img/phone.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="label_10">
@@ -822,7 +887,7 @@
       <rect>
        <x>0</x>
        <y>230</y>
-       <width>66</width>
+       <width>41</width>
        <height>21</height>
       </rect>
      </property>
@@ -891,7 +956,13 @@
       </palette>
      </property>
      <property name="text">
-      <string>E-mail:</string>
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/img/email.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="lName">
@@ -899,7 +970,7 @@
       <rect>
        <x>90</x>
        <y>50</y>
-       <width>211</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -916,9 +987,9 @@
     <widget class="QLabel" name="lFatherName">
      <property name="geometry">
       <rect>
-       <x>95</x>
+       <x>90</x>
        <y>70</y>
-       <width>201</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -935,9 +1006,9 @@
     <widget class="QLabel" name="lFamily">
      <property name="geometry">
       <rect>
-       <x>100</x>
+       <x>90</x>
        <y>90</y>
-       <width>191</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -954,9 +1025,9 @@
     <widget class="QLabel" name="lCity">
      <property name="geometry">
       <rect>
-       <x>95</x>
+       <x>90</x>
        <y>110</y>
-       <width>201</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -973,9 +1044,9 @@
     <widget class="QLabel" name="lICQ">
      <property name="geometry">
       <rect>
-       <x>95</x>
+       <x>90</x>
        <y>130</y>
-       <width>201</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -992,9 +1063,9 @@
     <widget class="QLabel" name="lVK">
      <property name="geometry">
       <rect>
-       <x>95</x>
+       <x>90</x>
        <y>150</y>
-       <width>201</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -1011,14 +1082,17 @@
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="lOK">
      <property name="geometry">
       <rect>
-       <x>95</x>
+       <x>90</x>
        <y>170</y>
-       <width>201</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -1035,14 +1109,17 @@
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="lFaceBook">
      <property name="geometry">
       <rect>
-       <x>95</x>
+       <x>90</x>
        <y>190</y>
-       <width>201</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -1060,13 +1137,16 @@
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
      </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QLabel" name="lPhone">
      <property name="geometry">
       <rect>
-       <x>95</x>
+       <x>90</x>
        <y>210</y>
-       <width>201</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -1162,7 +1242,7 @@
       <rect>
        <x>90</x>
        <y>30</y>
-       <width>211</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -1179,9 +1259,9 @@
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>60</x>
        <y>250</y>
-       <width>311</width>
+       <width>281</width>
        <height>21</height>
       </rect>
      </property>
@@ -1258,7 +1338,7 @@
       <rect>
        <x>0</x>
        <y>280</y>
-       <width>301</width>
+       <width>341</width>
        <height>111</height>
       </rect>
      </property>
@@ -1267,13 +1347,25 @@
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="source">
+      <url>
+       <string>qrc:/img/info.png</string>
+      </url>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lMail">
      <property name="geometry">
       <rect>
        <x>90</x>
        <y>230</y>
-       <width>211</width>
+       <width>250</width>
        <height>21</height>
       </rect>
      </property>
@@ -1283,6 +1375,258 @@
       </font>
      </property>
     </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>150</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>231</green>
+           <blue>231</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>VK:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>171</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/img/ok.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>210</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>231</green>
+           <blue>231</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>Тел:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>230</y>
+       <width>66</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>231</green>
+           <blue>231</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string>Mail:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>250</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>150</red>
+           <green>138</green>
+           <blue>138</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>143</red>
+           <green>146</green>
+           <blue>147</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>143</red>
+           <green>146</green>
+           <blue>147</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/img/info.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -1290,7 +1634,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>614</width>
+     <width>663</width>
      <height>26</height>
     </rect>
    </property>
@@ -1304,6 +1648,9 @@
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menu_2">
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
     <property name="title">
      <string>Справка</string>
     </property>
@@ -1321,6 +1668,9 @@
    <property name="text">
     <string>Новый контакт</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
   <action name="action_4">
    <property name="text">
@@ -1329,6 +1679,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
  <connections/>
 </ui>

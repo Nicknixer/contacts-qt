@@ -25,13 +25,50 @@
      <height>411</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Light">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>26</red>
+         <green>249</green>
+         <blue>234</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Light">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>26</red>
+         <green>249</green>
+         <blue>234</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Light">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>26</red>
+         <green>249</green>
+         <blue>234</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="font">
     <font>
      <pointsize>14</pointsize>
     </font>
    </property>
    <property name="title">
-    <string>Заполните данные:</string>
+    <string>Данные контакта:</string>
    </property>
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -77,8 +114,8 @@
      <rect>
       <x>100</x>
       <y>50</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
@@ -87,8 +124,8 @@
      <rect>
       <x>100</x>
       <y>70</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
@@ -97,8 +134,8 @@
      <rect>
       <x>100</x>
       <y>90</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
@@ -120,8 +157,8 @@
      <rect>
       <x>100</x>
       <y>30</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
@@ -143,8 +180,8 @@
      <rect>
       <x>100</x>
       <y>110</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
@@ -166,8 +203,8 @@
      <rect>
       <x>100</x>
       <y>130</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
@@ -189,8 +226,8 @@
      <rect>
       <x>100</x>
       <y>150</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -220,8 +257,8 @@
      <rect>
       <x>100</x>
       <y>170</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -251,8 +288,8 @@
      <rect>
       <x>100</x>
       <y>190</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -282,8 +319,8 @@
      <rect>
       <x>100</x>
       <y>230</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
@@ -331,8 +368,8 @@
      <rect>
       <x>100</x>
       <y>210</y>
-      <width>241</width>
-      <height>21</height>
+      <width>250</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>

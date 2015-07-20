@@ -2,6 +2,8 @@
 #define ADDFORM_H
 
 #include <QWidget>
+#include <QDir>
+#include <QMessageBox>
 namespace Ui {
 class addForm;
 }
@@ -26,6 +28,7 @@ signals:
 private:
     Ui::addForm *ui;
     void msg(QString arg);
+    void add_contact();
 };
 
 #endif // ADDFORM_H

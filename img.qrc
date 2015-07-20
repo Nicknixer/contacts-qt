@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>logoAbout.png</file>
+        <file>about.cpp</file>
+        <file>email.png</file>
+        <file>facebook-logo.png</file>
+        <file>icq.png</file>
+        <file>info.png</file>
+        <file>ok.png</file>
+        <file>phone.png</file>
+        <file>vk.png</file>
+    </qresource>
+</RCC>
